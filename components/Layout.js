@@ -5,7 +5,6 @@ import { useRouter } from 'next/router'
 
 const Layout = ({ children }) => {
     const router = useRouter()
-    console.log(router.route );
     if (router.route != '/sign-in' && router.route != '/sign-up') {
         return <div>
             <Navbar />
